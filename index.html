@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Björnes Garage – Allt radiostyrt!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span>🚚 Fri frakt över 500 kr</span>
+            <span>📦 Snabb leverans</span>
+            <span>🔧 Expert-support</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <a href="/" class="logo">
+                <span class="logo-icon">🏎️</span>
+                <span class="logo-text">Björnes<span>Garage</span></span>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Sök produkter, varumärken, delar...">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="header-actions">
+                <a href="#" class="action-btn">
+                    <span class="icon">👤</span>
+                    <span class="label">Konto</span>
+                </a>
+                <a href="#" class="action-btn cart">
+                    <span class="icon">🛒</span>
+                    <span class="label">Kundvagn</span>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Bilar <span class="arrow">▸</span></a>
+                    <div class="dropdown mega-dropdown">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4>Kategorier</h4>
+                                <ul>
+                                    <li><a href="#">Banbilar Touring</a></li>
+                                    <li><a href="#">Buggy & Terrängbilar</a></li>
+                                    <li><a href="#">Monstertruckar</a></li>
+                                    <li><a href="#">Crawlers</a></li>
+                                    <li><a href="#">Driftbilar</a></li>
+                                    <li><a href="#">Mini-Z</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Varumärken</h4>
+                                <ul>
+                                    <li><a href="#">Tamiya</a></li>
+                                    <li><a href="#">Kyosho</a></li>
+                                    <li><a href="#">Associated</a></li>
+                                    <li><a href="#">HPI Racing</a></li>
+                                    <li><a href="#">Traxxas</a></li>
+                                    <li><a href="#">XRAY</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column featured">
+                                <h4>Populärt just nu</h4>
+                                <a href="#" class="featured-item">
+                                    <img src="https://via.placeholder.com/120x80/1a1a2e/fff?text=Touring" alt="">
+                                    <span>Touring-bilar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Reservdelar <span class="arrow">▸</span></a>
+                    <div class="dropdown mega-dropdown">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4>Bildelar</h4>
+                                <ul>
+                                    <li><a href="#">Chassi & Ram</a></li>
+                                    <li><a href="#">Motor & ESC</a></li>
+                                    <li><a href="#">Servo & Styrning</a></li>
+                                    <li><a href="#">Drivlina</a></li>
+                                    <li><a href="#">Fjädring & Dämpare</a></li>
+                                    <li><a href="#">Hjul & Däck</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Efter varumärke</h4>
+                                <ul>
+                                    <li><a href="#">Kyosho Mini-Z delar</a></li>
+                                    <li><a href="#">Tamiya delar</a></li>
+                                    <li><a href="#">Associated delar</a></li>
+                                    <li><a href="#">HPI delar</a></li>
+                                    <li><a href="#">Traxxas delar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Elektronik <span class="arrow">▸</span></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Motorer</a></li>
+                            <li><a href="#">ESC & Reglage</a></li>
+                            <li><a href="#">Servon</a></li>
+                            <li><a href="#">Gyron</a></li>
+                            <li><a href="#">Mottagare & Sändare</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Batterier & Laddare <span class="arrow">▸</span></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">LiPo batterier</a></li>
+                            <li><a href="#">NiMH batterier</a></li>
+                            <li><a href="#">Batteriladdare</a></li>
+                            <li><a href="#">Balansering</a></li>
+                            <li><a href="#">Batteriväskor</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Däck & Fälg <span class="arrow">▸</span></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Touring-däck</a></li>
+                            <li><a href="#">Buggy-däck</a></li>
+                            <li><a href="#">Drift-däck</a></li>
+                            <li><a href="#">Crawler-däck</a></li>
+                            <li><a href="#">Fälgar</a></li>
+                            <li><a href="#">Däcksoppa</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Karosser & Färg <span class="arrow">▸</span></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Karosser 1/10</a></li>
+                            <li><a href="#">Karosser 1/8</a></li>
+                            <li><a href="#">Karosser Mini-Z</a></li>
+                            <li><a href="#">Lexanfärg</a></li>
+                            <li><a href="#">Maskeringstejp</a></li>
+                            <li><a href="#">Klädsel & Dekaler</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Verktyg <span class="arrow">▸</span></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Verktygssatser</a></li>
+                            <li><a href="#">Momentnycklar</a></li>
+                            <li><a href="#">Lödstationer</a></li>
+                            <li><a href="#">Mätinstrument</a></li>
+                            <li><a href="#">Organisation</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Setup <span class="arrow">▸</span></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Setup-stationer</a></li>
+                            <li><a href="#">Camber-mätare</a></li>
+                            <li><a href="#">Ride-height</a></li>
+                            <li><a href="#">Vikter & Balans</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link highlight">Utförsäljning</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Allt för din RC-hobby</h1>
+            <p>Bilar, delar, elektronik och tillbehör – från nybörjare till proffs</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Utforska produkter</a>
+                <a href="#" class="btn btn-secondary">Populärt just nu</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">5000+</span>
+                <span class="stat-label">Produkter</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Varumärken</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">24h</span>
+                <span class="stat-label">Leverans</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section class="categories-section" id="products">
+        <div class="container">
+            <h2 class="section-title">Populära kategorier</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">🏎️</div>
+                    <h3>Banbilar Touring</h3>
+                    <p>On-road precision</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🚙</div>
+                    <h3>Buggy & Terräng</h3>
+                    <p>Off-road action</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🦾</div>
+                    <h3>Monstertruckar</h3>
+                    <p>Extrem kraft</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">⚡</div>
+                    <h3>Elektronik</h3>
+                    <p>Motorer, ESC, servo</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🔋</div>
+                    <h3>Batterier</h3>
+                    <p>LiPo & tillbehör</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Karosser & Färg</h3>
+                    <p>Lexan & dekaler</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <h3>Reservdelar</h3>
+                    <p>Allt för reparation</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🏁</div>
+                    <h3>Setup & Verktyg</h3>
+                    <p>Tuning & mätning</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nyheter & Populärt</h2>
+                <a href="#" class="view-all">Se alla →</a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge new">Nyhet</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a2e/e94560?text=Touring+Car" alt="">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Tamiya</span>
+                        <h3 class="product-name">1/10 R/C Porsche 934 50th Anniversary</h3>
+                        <div class="product-price">
+                            <span class="price">5 495 kr</span>
+                        </div>
+                        <button class="btn btn-cart">Lägg i kundvagn</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge sale">-15%</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a2e/e94560?text=Buggy+Kit" alt="">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Associated</span>
+                        <h3 class="product-name">RC8B4.2 Team Kit Euro Edition</h3>
+                        <div class="product-price">
+                            <span class="price">8 290 kr</span>
+                            <span class="old-price">9 750 kr</span>
+                        </div>
+                        <button class="btn btn-cart">Lägg i kundvagn</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a2e/e94560?text=Mini-Z" alt="">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Kyosho</span>
+                        <h3 class="product-name">Mini-Z MR04 RWD Mercedes AMG GT3</h3>
+                        <div class="product-price">
+                            <span class="price">2 595 kr</span>
+                        </div>
+                        <button class="btn btn-cart">Lägg i kundvagn</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge hot">Populär</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a2e/e94560?text=Batteri" alt="">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Pink Performance</span>
+                        <h3 class="product-name">Ultra XR LiPo 4S 14.8V-5000-50C</h3>
+                        <div class="product-price">
+                            <span class="price">695 kr</span>
+                        </div>
+                        <button class="btn btn-cart">Lägg i kundvagn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Varumärken</h2>
+            <div class="brands-grid">
+                <a href="#" class="brand-card">Tamiya</a>
+                <a href="#" class="brand-card">Kyosho</a>
+                <a href="#" class="brand-card">Associated</a>
+                <a href="#" class="brand-card">HPI Racing</a>
+                <a href="#" class="brand-card">Traxxas</a>
+                <a href="#" class="brand-card">XRAY</a>
+                <a href="#" class="brand-card">Futaba</a>
+                <a href="#" class="brand-card">Sanwa</a>
+                <a href="#" class="brand-card">Louise</a>
+                <a href="#" class="brand-card">HUDY</a>
+                <a href="#" class="brand-card">Bitty Design</a>
+                <a href="#" class="brand-card">Volantex</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Snabb leverans</h3>
+                    <p>Beställ innan 14:00, skickas samma dag</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Expert-support</h3>
+                    <p>Vi har koll på RC – fråga oss!</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">↩️</div>
+                    <h3>30 dagar öppet köp</h3>
+                    <p>Byte & retur utan krångel</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Säkra betalningar</h3>
+                    <p>Klarna, Swish, kort</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Få de senaste nyheterna</h2>
+                <p>Prenumerera på vårt nyhetsbrev och få 10% rabatt på första köpet</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Din e-postadress">
+                    <button type="submit" class="btn btn-primary">Prenumerera</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Handla</h4>
+                    <ul>
+                        <li><a href="#">Bilar</a></li>
+                        <li><a href="#">Reservdelar</a></li>
+                        <li><a href="#">Elektronik</a></li>
+                        <li><a href="#">Batterier</a></li>
+                        <li><a href="#">Tillbehör</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Om oss</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Frakt & retur</a></li>
+                        <li><a href="#">Betalningsvillkor</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>📧 info@bjornesgarage.se</li>
+                        <li>📞 070-XXX XX XX</li>
+                        <li>📍 Stockholm, Sverige</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📸</a>
+                        <a href="#">🎵</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Björnes Garage. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
